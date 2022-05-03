@@ -1,3 +1,22 @@
+
+//make a file lex.txt containing a small c prog and write the name "lex.txt" 
+/* Algorithm:
+
+ Initialize the file pointers, predefined keywords, operators in separate
+arrays.
+ Read every line of the input file by reading each character and
+appending it to another string “line” till it encounters ‘\n’.
+ Now check whether line is a comment or not.
+ Run a loop through the line string and extract words from it using
+special characters as delimiters.
+ For each special character encountered, check whether the character
+is an operator or not and then send the extracted word into the
+function that will decide what category of Lexeme it is.
+ If it is one of the keywords, then the output is 1, if it is a valid identifier
+then output is 2, otherwise output is 0.
+ Write onto the respective files according to the classified data.
+ Print the number of lines as output.*/
+
 #include <stdio.h>
 #include <ctype.h>
 #include <string.h>
